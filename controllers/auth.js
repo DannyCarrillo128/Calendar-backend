@@ -60,7 +60,7 @@ const signIn = async (req = request, res = response) => {
     if (!user) {
       res.status(400).json({
         ok: false,
-        message: 'User does not exists.'
+        message: 'User does not exist.'
       });
     }
 
@@ -69,7 +69,7 @@ const signIn = async (req = request, res = response) => {
     if (!validPassword) {
       return res.status(400).json({
         ok: false,
-        message: 'User does not exists.'
+        message: 'User does not exist.'
       });
     }
 
